@@ -2,15 +2,9 @@
   <h1>{{ myInfo }}123</h1>
 </template>
 
-<script lang="ts">
+<script setup>
 import { ref,defineComponent } from "vue";
-export default {
-  name: "myInfo",
-  setup: () => {
-    const myInfo = ref('myInfo');
-    return { myInfo };
-  },
-};
+const myInfo = ref('myInfo');
 </script>
 
 <style scoped>
